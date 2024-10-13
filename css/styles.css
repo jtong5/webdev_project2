@@ -1,32 +1,12 @@
-body {
-  margin: 0;
-  font-family: Helvetica, sans-serif;
-}
-
-#page-wrapper { /* Same across all pages */
-  max-width: 60%;
-  margin: 0 auto;
-  padding: 2em;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#homepage section {
-  background-color: #f9f9f9;
-  padding: 2em;
+/********************************SHARED CSS ****************************/
+#header {
   margin: 2em 0;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
-header { /* Same across all pages */
-  margin: 2em 0;
+  margin-bottom: 0;
   text-align: center;
-  position: relative;
 }
 
-#main-nav { /* Nav is same across all pages */
-  text-align: center; /* Center the nav items */
-  margin: 20px 0; /* Space above and below the nav */
+#main-nav {
+  text-align: center;
   background-color: #333;
   padding: 10px;
 }
@@ -35,37 +15,99 @@ header { /* Same across all pages */
   list-style-type: none;
   padding: 0; 
   margin: 0;
-  display: inline-block; /* Center the ul */
+  display: inline-block;
 }
 
 #main-nav ul li {
-  display: inline; /* Display list items in a row */
+  display: inline;
   margin: 0 15px;
 }
 
 #main-nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-weight: bold; /* Make links bold */
+  font-weight: bold;
 }
 
 #main-nav ul li a:hover {
-  color: #007BFF; /* Change color on hover */
-  text-decoration: underline; /* Add underline on hover */
-}
-
-#homepage main {
-  border-radius: 12px;
-  margin-bottom: 40px;
-}
-
-#homepage img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  color: #007BFF; 
+  text-decoration: underline;
 }
 
 h2 {
   margin-top: 40px;
   font-size: 2em;
+}
+/***************************END OF SHARED CSS*****************************/
+
+/***************************HOMEPAGE CSS**********************************/
+body#homepage {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-image: url("../images/mangobg.jpg");
+}
+
+#homepage #header {
+  margin: 0;
+  text-align: center;
+}
+
+#homepage #header h1 {
+  color: white; 
+  font-size: 2.5em;
+}
+
+#homepage main {
+  display: grid; /* add grids */
+  grid-template-columns: repeat(2, 1fr); /* two top, two bottom */
+  gap: 20px; /* space between the boxes */
+}
+
+#homepage #page-wrapper {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 2em;
+  color: white;
+  text-shadow: 0 0 7px #FFA400; /*makes text glow orange*/
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#homepage section {
+  background-color: #f9f9f9;
+  padding: 2em;
+  margin: 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-image: url("../images/tropical.jpg");
+}
+
+#homepage img { /* Center images */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#mangobox1, #mangobox2, #mangobox3, #mangobox4 {
+  background-color: #f9f9f9; 
+  padding: 2em; 
+  border-radius: 8px; 
+  border: 1px solid #ddd; 
+  box-sizing: border-box; 
+}
+/*************************END OF HOMEPAGE CSS******************************/
+
+/****************************CSS FOR RESUME*******************************/
+body#resume {
+  margin: 0;
+  font-family: Roboto;
+}
+
+#resume #page-wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 2em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
