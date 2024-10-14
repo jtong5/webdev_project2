@@ -138,6 +138,7 @@ body#resume {
 
 #resume-main ul {
   font-size: 1.1em;
+}
 #resume-side {
   background-color: #f9f9f9;
   font-size: 1.1em;
@@ -166,7 +167,7 @@ body#videogame {
 }
 
 #videogame #page-wrapper {
-  width: 80%;
+  width: 80rem;
   margin: 0 auto;
   padding: 0;
 }
