@@ -72,6 +72,7 @@ body#homepage {
   display: grid; /* add grids */
   grid-template-columns: repeat(2, 1fr); /* two top, two bottom */
   gap: 20px; /* space between the boxes */
+  overflow: hidden;
 }
 
 #homepage #page-wrapper {
@@ -97,7 +98,8 @@ body#homepage {
   padding: 2em; 
   border-radius: 8px; 
   border: 1px solid #ddd; 
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  float: left; 
   background-image: url("../images/tropical.jpg");
 }
 /**************************************************************************/
@@ -105,7 +107,7 @@ body#homepage {
 /****************************RESUME CSS************************************/
 body#resume {
   margin: 0;
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   background-image: url("../images/blackbg.jpg");
   background-position: center;
 }
@@ -129,11 +131,14 @@ body#resume {
   gap: 20px;
   background-color: rgba(240, 240, 240, 1);  /* white background */
   border-radius: 8px;
+  overflow: hidden;
 } 
 
 #resume-main {
   font-size: 1em;
   color: #333;
+  float: left;
+  width: 80%;
 }
 
 #resume-main ul {
@@ -144,6 +149,7 @@ body#resume {
   font-size: 1.1em;
   padding: 1.5em;
   border-radius: 10px;
+  float: right;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 /*********************************************************************/
@@ -189,7 +195,9 @@ body#videogame {
   margin: 1em;
   border-radius: 8px;
   border: 1px solid #9FE2BF;
-  background-image: linear-gradient(to right top, black, white, black); /* makes a gradient that goes black-white-black */
+  float: left 50%;
+  float: right 50%;
+  background-image: linear-gradient(to right top, #1c2951, #fcfbfe, #49151F); /* makes a gradient */
 }
 
 #videogame img { /* centers image */
