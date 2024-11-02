@@ -60,7 +60,7 @@ body#homepage {
 
 #homepage #header {
   margin: 0;
-  text-align: center;
+  position: relative;
 }
 
 #homepage #header h1 {
@@ -73,6 +73,7 @@ body#homepage {
   grid-template-columns: repeat(2, 1fr); /* two top, two bottom */
   gap: 20px; /* space between the boxes */
   overflow: hidden;
+  float: left;
 }
 
 #homepage #page-wrapper {
@@ -90,6 +91,7 @@ body#homepage {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  position: relative; 
   width: 60%;
 }
 
@@ -99,7 +101,7 @@ body#homepage {
   border-radius: 8px; 
   border: 1px solid #ddd; 
   box-sizing: border-box;
-  float: left; 
+  position: relative;
   background-image: url("../images/tropical.jpg");
 }
 
@@ -119,6 +121,7 @@ body#resume {
 #resume #header {
   color: white;
   margin: 0;
+  position: relative;
 }
 
 #resume #header h1 {
@@ -199,7 +202,7 @@ body#videogame {
   margin: 1em;
   border-radius: 8px;
   border: 1px solid #9FE2BF;
-  float: none;
+  position: relative;
   background-image: linear-gradient(to right top, #1c2951, #fcfbfe, #49151F); /* makes a gradient */
 }
 
