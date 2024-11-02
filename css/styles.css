@@ -199,8 +199,7 @@ body#videogame {
   margin: 1em;
   border-radius: 8px;
   border: 1px solid #9FE2BF;
-  float: left 50%;
-  float: right 50%;
+  float: none;
   background-image: linear-gradient(to right top, #1c2951, #fcfbfe, #49151F); /* makes a gradient */
 }
 
